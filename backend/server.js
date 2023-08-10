@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.send('Welcome to Clothify Backend.!!!');
 });
 
+app.get('/test', (req, res) => {
+  res.send('Test API Called successfully');
+});
+
 app.listen(port, () => {
   console.log(`Server is listing on port:${port}`);
 });
